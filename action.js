@@ -9,16 +9,16 @@ export const THUMB_DOWN_COMMENT = 'THUMB_DOWN_COMMENT';
 function addComment(text) {
     return {
         type: ADD_COMMENT,
-        text: 'new comment',
-        id: uuid.v4()
+        id: uuid.v4(),
+        text
     }
 }
 
 function editComment(id, text) {
     return {
         type: EDIT_COMMENT,
-        text: 'edited comment',
-        id
+        id,
+        text
     }
 }
 
